@@ -1,5 +1,8 @@
-my collect(collection) do |something|
-  while
+def my collect(array)
+  i = 0 
+  name_collection =[]
+  while i < array.length 
+  name_collection << yield(array[i])
 yield
 end
 
