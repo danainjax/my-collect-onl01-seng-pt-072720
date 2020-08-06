@@ -3,7 +3,9 @@ def my collect(array)
   name_collection =[]
   while i < array.length 
   name_collection << yield(array[i])
-yield
+  i += 1 
+end
+name_collection
 end
 
 
